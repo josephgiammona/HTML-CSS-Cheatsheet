@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML/CSS Cheatsheet</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+</head>
+
+<body>
+    <!-- navigation -->
+    <nav id="navigation">
+    <h1 style="font-size:24px; font-style: bold; text-align: left; text-decoration: underline;"><a href="#HTML"> HTML:</a></h1>
+    
+        <ul>
+            <li class="list"> <a href="#Tables">Tables</a></li>
+            <li class="list"> <a href="#Forms">Forms</a></li>
+        </ul>
+    
+    
+
+    <h1 style="font-size:24px; font-style: bold; text-align: left; text-decoration: underline;"><a href="#CSS"> CSS:</a></h1>
+   
+        <ul>
+            <li class="list"> <a href="#DisplayAndPositioning" title="Display/Positioning">Display/Positioning</a></li>
+            <li class="list"> <a href="#TextEditing" title="Text Editing">Text Editing</a></li>
+            <li class="list"> <a href="#Pseudo-Classes" title="Pseudo-Classes" style="display: inline;">Pseudo-Classes</a></li>
+        </ul>
+</nav>
+    <!--HTML-->
+    <br>
+        <header id="HTML">HTML</header>
+</br>
+
+        <br>
+
+    <!--Table-->
+        <h1 id="Tables">Tables</h1>
+
+        <br>
+
+        <div id="tags">
+            <h2>Table Tags</h2>
+            
+ 
+
+            <table >
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+
+                <hbody>
+                    <tr>
+                        <td><span class="code">&lt;table&gt;</span></td>
+                        <td>Table</td>
+                        <td>The wrapper element for all HTML tables.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">&lt;thead&gt;</span></td>
+                        <td>Table Head</td>
+                        <td>The set rows defining the column headers in a table.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">&lt;tbody&gt;</span></td>
+                        <td>Table Body</td>
+                        <td>The set of rows containing actual table data.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">&lt;tr&gt;</span></td>
+                        <td>Table Row</td>
+                        <td>The table row container.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">&lt;td&gt;</span></td>
+                        <td>Data Cell</td>
+                        <td>The data found within the table row.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">&lt;th&gt;</span></td>
+                        <td>Header Cell</td>
+                        <td>The data found withing the &lt;thead&gt;.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">&lt;tfoot&gt;</span></td>
+                        <td>Table Foot</td>
+                        <td>The set of rows defining the footer in a table.</td>
+                    </tr>
+                </hbody>
+            </table>
+        </div>
+
+        <br>
+
+        <div id="attributes">
+        <h2>Table Attributes</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Attribute</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+
+            <hbody>
+                <tr>
+                    <td><span class="code">colspan=</span></td>
+                    <td>Column Span</td>
+                    <td>Defines how many columns a &lt;td&gt; element should span.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">rowspan=</span></td>
+                    <td>Row Span</td>
+                    <td>Defines how many rows a &lt;td&gt; element should span.</td>
+                </tr>
+
+            </hbody>
+        </table>
+        
+        </div>
+    
+    <br>
+    <br>
+    <!-- Form -->
+    <h1 id="Forms">Forms</h1>
+    
+    <!--Elements/type=/Attributes-->
+    <div id="Elements">
+
+        <h2>Elements</h2>
+
+        <table class="HTMLTable">
+            <thead>
+                <tr>
+                    <th>Element</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><span class="code">&lt;form&gt;</span></td>
+                    <td>Form</td>
+                    <td>Used to collect and send data to another source.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;input&gt;</span></td>
+                    <td>*Variety*</td>
+                    <td>Can render a variety of input fields through <span class="code">type=</span>.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;label&gt;</span></td>
+                    <td>Label/<br>
+                        Identification</td>
+                    <td>Provides identification for a specific <span class="code">&lt;input&gt;</span>. The <span class="code">&lt;label&gt;</span>'s <span class="code">for="#"</span> attribute should match the <span class="code">&lt;input&gt;</span>'s <span class="code">id="#"</span> attribute.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;textarea&gt;</span></td>
+                    <td>Text-box</td>
+                    <td>Creates a text-box for multi-line input. Supports <span class="code">rows=</span> and <span class="code">cols=</span> attributes. </td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;select&gt;</span></td>
+                    <td>Select</td>
+                    <td>Creates a dropdown list. You can create different options within the <span class="code">&lt;option&gt; &lt;/option&gt;</span> element within the <span class="code">&lt;select&gt;</span> element.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;option&gt;</span></td>
+                    <td>Options to Select</td>
+                    <td>Used within the <span class="code">&lt;select&gt;</span> element to create various options.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;datalist&gt;</span></td>
+                    <td>Datalist</td>
+                    <td>This element is created under the <span class="code">&lt;input list="#"&gt;</span> element. The <span class="code"> id=</span> attribute in the datalist should match the value of the <span class="code">list=</span> in the input. Used to store a list of options by creating a <span class="code"> value=</span> in the <span class="code">&lt;option value="#"/&gt;</span> element.</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <!-- Type= -->
+        <h2>type=</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>type=</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="code">"checkbox"</span></td>
+                    <td>Chackbox</td> 
+                    <td>Allows the user to check multiple boxes under the same <span class="code">name=</span> attribute.</td> 
+                </tr>
+                <tr>
+                    <td><span class="code">"number"</span></td>
+                    <td>Number Type</td> 
+                    <td>Allows the user to enter only numbers and a few special characters. Key-value pair will have <span class="code">name: value</span> when the form is submitted. Contains <span class="code">name="#"</span> attribute.</td> 
+                </tr>
+                <tr>
+                    <td><span class="code">"range"</span></td> 
+                    <td>Range Type</td> 
+                    <td>Inserts a slider. Min and max value can be set with the <span class="code">min=</span> and <span class="code">max=</span> attributes. The steps inbetween the values can be set with the <span class="code">step=</span> attribute.</td> 
+                </tr>
+                <tr>
+                    <td><span class="code">"text"</span></td>
+                    <td>Text Type</td> 
+                    <td>Renders a single row input field that users can type text inside. Can be used for username field.</td> 
+                </tr>
+                <tr>
+                    <td><span class="code">"radio"</span></td> 
+                    <td>Radio Button Type</td> 
+                    <td>Renders a singe radio button. Multiple radio butons of the same topic is given the same <span class="code">name="#"</span>. Only one <span class="code">value="#"</span> attribute can be selected by the user.</td> 
+                </tr>
+                <tr>
+                    <td><span class="code">"submit"</span></td>
+                    <td>Submit Button</td>
+                    <td>Renders a submit button. Default states <span class="code">Submit</span>, however, the name can be changed through the <span class="code">value="#"</span> attribute. 
+                </tr>
+                <tr>
+                    <td><span class="code">"password"</span></td>
+                    <td>Password Type</td>
+                    <td>Renders a single row input field that censores text to protext sensitive information. The <span class="code">type</span> and <span class="code">name</span> attribute is sent out as a key-value pair. </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Attributes -->
+        <h2>Form Attributes</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="code">name=</span></td> 
+                    <td>Name</td> 
+                    <td>Identifies where to apply a given data. All of the data on this name will link together to the <span class="code">value</span>.</td> 
+                </tr>
+                <tr>
+                    <td><span class="code">value=</span></td>
+                    <td>Value</td> 
+                    <td>Data within the selected item. Pairs the <span class="code">value=</span> attribute with the <span class="code">name=</span> attribtue within the <span class="code">&lt;select&gt</span> element.</td> 
+                </tr>
+                <tr>
+                    <td><span class="code">min=</span></td>
+                    <td>Min</td> 
+                    <td>Sets the minimum value for the Range Type.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">max=</span></td>
+                    <td>Max</td> 
+                    <td>Sets the maximum value for the Range Type.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">step=</span></td>
+                    <td>Step</td> 
+                    <td>Sets the step value for the Range Type.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">action=</span></td> 
+                    <td>Action</td> 
+                    <td>Tells the form to send the information. A url is assigned to tell the form where to go. <span class="code">action="/index3.html"</span></td>
+                </tr>
+                <tr>
+                    <td><span class="code">method=</span></td>
+                    <td>Method</td> 
+                    <td>Tells the form what to do with that information once it's set. <span class="code">method="PUT"</span></td>
+                </tr>
+                <tr>
+                    <td><span class="code">required</span></td>
+                    <td>Required</td>
+                    <td>Makes an input field required by the user. Can be set as <span class="code">required</span> or <span class="code">required="true"</span>. </span> </td>
+                </tr>
+                <tr>
+                    <td><span class="code">max=</span></td>
+                    <td>Max #</td>
+                    <td>Sets the max number for  <span class="code">type="number"</span>.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">min=</span></td>
+                    <td>Min #</td>
+                    <td>Sets the min number for  <span class="code">type="number"</span>.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">maxlength=</span></td>
+                    <td>Max Characters</td>
+                    <td>Sets the max amount of characters for <span class="code">type="text"</span>.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">minlength=</span></td>
+                    <td>Min Characters</td>
+                    <td>Sets the min amount of characters for <span class="code">type="text"</span>.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">pattern=</span></td>
+                    <td>Validates Input</td>
+                    <td>Controls what is allowed to be submited in the <span class="code">type="text"</span>. <span class="code">pattern="[characters]{# of characters}"</span></td>
+                </tr>
+                <tr>
+                    <td><span class="code">title=</span></td>
+                    <td>Title</td>
+                    <td>Inserts a title for the element as when the mouse is hovered over it.</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+        
+    </div>
+    <hr>
+    <!--CSS-->
+    <header id="CSS">CSS</header>
+
+    <br>
+    <br>
+
+    <!-- Display and Positioning -->
+    <div>
+    <h1 id="DisplayAndPositioning">Display and Positioning</h1>
+    
+    <br>
+
+    <h2>Miscellaneous</h2>
+
+    <div>
+    <table class="CSSTable">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Values</th>
+                <th>Description</th>
+            <tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><span class="code">z-index:</span></td>
+                <td><span class="code">#;</span></td>
+                <td>Uses integer values that can be positive or negative. This decides which element is in the foreground and background.</td>
+            </tr>
+            <tr>
+                <td><span class="code">float:</span></td>
+                <td><span class="code">left; 
+                    <br>
+                    right;
+                </span></td>
+                <td>Determins how far left or right an element should float within its <strong>parent</strong> element. The <span class="code">width:</span> of the container must be specified or the element will assume the full width of its containing element.</span> 
+                    
+                    <br>
+                    <br>
+
+                    <span class="code">left;</span> &larr; Content will float to the left of the container. 
+
+                    <br>
+                    <br>
+
+                    <span class="code">right;</span> &larr; Content will float to the right of the container.
+
+                </td>
+            </tr>
+            <tr>
+                <td><span class="code">clear:</span></td>
+                <td><span class="code">right;
+
+                    <br>
+
+                    left;
+
+                    <br>
+
+                    both;
+
+                    <br>
+
+                    none;
+                </span></td>
+                <td>Specifies how an element should behave when it bumps into another element within the same containing element. The <span class="code">clear:</span> property is used with the <span class="code">float:</span> properly. This determines which side the floating elements are allowed to float. 
+                
+                    <br>
+                    <br>
+
+                    <span class="code">right;</span> &larr; No other elements within the same containing element are allowed to float on the left side of this element.
+
+                    <br>
+                    <br>
+
+                    <span class="code">left;</span> &larr; No other elements within the same containing element are allowed to float on the right side of this element.
+
+                    <br>
+                    <br>
+
+                    <span class="code">both;</span> &larr; No other elements within the same containing element are allowed to float on either side of this element.
+
+                    <br>
+                    <br>
+
+                    <span class="code">none;</span> &larr; Elements within the same containing element are allowed to float on both sides of this element.
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+    </div>
+
+    <h2>Positioning</h2>
+
+    <div>
+    <table class="CSSTable">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Values/Name</th>
+                <th>Description</th>
+            <tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><span class="code">position:</span></td>
+                <td> 
+                    <ul> 
+                        <li class="PositionList"><span class="code">fixed;</span></li> 
+                        <li class="PositionList"><span class="code">relative;</span></li> 
+                        <li class="PositionList"><span class="code">absolute;</span></li> 
+                        <li class="PositionList"><span class="code">static;</span></li>
+                    </ul>
+
+                </td>
+                <td>Uses integer values that can be positive or negative. This decides which element is in the foreground and background.</td>
+            </tr>
+
+            <tr>
+                <td><span class="code">fixed;</span></td>
+                <td> Fixed</td>
+                <td>Enables the user to scroll through the web page and still access the element. Mainly used with the <span class="code">&lt;nav&gt;</span> element.</td>
+            </tr>
+
+            <tr>
+                <td><span class="code">relative;</span></td>
+                <td>Relative</td>
+                <td>Enables an element to be positioned relative to where it would have been originally been on a web page. Offset proprerties can be used to adjust the element. If no values are applied, the element's <span class="code">position:</span> property behaves like the <span class="code">static;</span> value.</td>
+            </tr>
+
+            <tr>
+                <td><span class="code">absolute;</span></td>
+                <td>Absolute</td>
+                <td>Removes an element from the document flow. Positions element to be positioned relative to its closest parent element that is positioned with <span class="code">relative;</span> or <span class="code">absolute;</span>. Positioning attributes can be applied: <span class="code">top:</span>, <span class="code">right:</span>, <span class="code">bottom:</span>, and <span class="code">left:</span>.</td>
+            </tr>
+
+            <tr>
+                <td><span class="code">static;</span></td>
+                <td>Static</td>
+                <td>This is the default positioning of a given element.</td>
+            </tr>
+        </tbody>
+
+    </table>
+    </div>
+
+    <br>
+    <!-- Positioning Attributes -->
+    <div>
+    
+    <h2> Positioning Attributes </h2>
+    <table class="CSSTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><span class="code">top:</span></td>
+                <td>How far from the top.</td>
+            </tr>
+            <tr>
+                <td><span class="code">right:</span></td>
+                <td>How far from the right.</td>
+            </tr>
+            <tr>
+                <td><span class="code">bottom:</span></td>
+                <td>How far from the bottom.</td>
+            </tr>
+            <tr>
+                <td><span class="code">left:</span></td>
+                <td>How far from the left.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    </div>
+<!-- Display Property -->
+    <div>
+        <h2><span class="code" style="border: 2px solid black; padding: 2px;">display:</span> Property</h2>
+        <table class="CSSTable">
+            <thead>
+                <tr>
+                    <th>Value</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><span class="code">block;</span></td>
+                    <td>Takes up the full width of their container with <span class="code">&lt;br&gt;</span> before and after. Height and width can be adjusted.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">inline;</span></td>
+                    <td>Takes up as little space as possible, flow horizontally. Height and width cannot be adjusted. </td>
+                </tr>
+                <tr>
+                    <td><span class="code">inline-block;</span></td>
+                    <td>Can appear next to each other. Can have width and height manually adjusted.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    </div>
+
+    <br>
+    <br>
+
+    <!-- Text Editing -->
+    <div>
+        <h1 id="TextEditing">Text Editing</h1>
+
+    <br>
+
+    <h2>Text</h2>
+    
+    <table class="CSSTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Values</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td><span class="code">text-decoration:</span></td>
+                <td><span class="code">underline;</span>
+                    <br>
+                    <span class="code">overline;</span>
+                    <br>
+                    <span class="code">line-through;</span>
+                </td>
+                <td>Sets the kind of line decoration through a text.</td>
+            </tr>
+            <tr>
+                <td><span class="code">text-decoration-color:</span></td>
+                <td><span class="code">rgb();</span>
+                </td>
+                <td>Sets the kind of line decoration through a text.</td>
+            </tr>
+        </tbody>
+
+    </table>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- Pseudo-Classes -->
+    <div>
+        <h1 id="Pseudo-Classes">Pseudo-Classes</h1>
+
+        <br>
+
+        <h2>Link States</h2>
+
+        <table class="CSSTable">
+            <thead>
+                <tr>    
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>    
+                    <td><span class="code">
+                        :link
+                        <br>
+                        :visited
+                        <br>
+                        :hover
+                        <br>
+                        :active
+                        <br>
+                    </span></td>
+                    <td>Proper order of Pseudo-Classes for the anchor (<span class="code">&lt;a&gt;</span>) element to behave as a 'click-able' button.</td> 
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+</body>
+</html>
